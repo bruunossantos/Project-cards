@@ -150,6 +150,15 @@ background-color: #6ED0BC;
     object-fit: cover;
 }
 
+.dragging {
+    opacity: 0.5;
+}
+
+.cards-hover {
+    background-color: #eaeffa;
+    border-radius: 8px;
+}
+
 *::-webkit-scrollbar{
     width: 8px;
 }
