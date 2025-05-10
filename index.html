@@ -16,10 +16,50 @@
             <div class="kanban-title">
                 <h2>Projeto</h2>
 
-                <button class="add-card">
+                <button class="add-card" data-modal="modal-1">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div><!--Kanban-title-->
+
+            <dialog id="modal-1">    
+                <form>
+                    <div class="modal-header">
+                        <h1 class="modal-title">Novo Card</h1>
+
+                        <button class="close-modal" data-modal="modal-1" type="button">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>       
+                    </div><!--modal-header-->
+
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <label for="card-title">Título</label>
+                            <input type="text" id="card-title" name="card-title" required>
+                        </div><!--input group-->
+
+                        <div class="input-group">
+                            <label for="card-description">Descrição</label>
+                            <textarea id="card-description" name="card-description" rows="3" required></textarea>
+                        </div><!--input group-->
+
+                        <div class="input-group">
+                            <label for="card-priority">Prioridade</label>
+                            <select id="card-priority" name="card-priority" required>
+                                <option value="">Selecione</option>
+                                <option value="high">Alta</option>
+                                <option value="medium">Média</option>
+                                <option value="low">Baixa</option>
+                            </select>
+                        </div><!--input group-->
+
+                    </div><!--modal-body-->
+
+                    <div class="modal-footer">
+                        <button type="submit" class="save-card">Salvar</button>
+                    </div><!--modal-footer-->
+
+                </form>
+            </dialog>
 
             <div class="kanban-cards">
                 <div class="kanban-card" draggable="true">
@@ -58,7 +98,7 @@
             <div class="kanban-title">
                 <h2>Em Desgin</h2>
 
-                <button class="add-card">
+                <button class="add-card" data-modal="modal-1">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
@@ -99,7 +139,7 @@
             <div class="kanban-title">
                 <h2>Em produção</h2>
 
-                <button class="add-card">
+                <button class="add-card" data-modal="modal-1">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
@@ -143,7 +183,7 @@
             <div class="kanban-title">
                 <h2>Em revisão</h2>
 
-                <button class="add-card">
+                <button class="add-card" data-modal="modal-1">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
@@ -185,7 +225,7 @@
             <div class="kanban-title">
                 <h2>Concluído</h2>
 
-                <button class="add-card">
+                <button class="add-card" data-modal="modal-1">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
@@ -223,7 +263,7 @@
         </div> <!--kanban-column-->
         
     </main>
-    
+
     <script src="src/javascript/script.js"></script>    
 
 </body>

@@ -172,3 +172,108 @@ background-color: #6ED0BC;
     background-color: #b7d3fb;
     border-radius: 20px;
 }
+
+/*Estilo do Modal*/
+
+dialog {
+    border: 0;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #93c5fd;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.close-modal {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: red;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group label{
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    border-color: #60a5fa;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: #f9fafb;
+}
+
+.modal-footer .save-card{
+    background-color: green;
+    border: none;
+    color: #ffffff;
+    padding: 8px 35px;
+    border-radius: 15px;
+}
+
+.modal-footer .save-card:hover{
+    background-color: rgb(0, 107, 0);
+    border: none;
+    color: #ffffff;
+    padding: 8px 35px;
+    border-radius: 15px;
+}
+
