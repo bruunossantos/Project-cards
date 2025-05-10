@@ -31,11 +31,10 @@ Este é um projeto de quadro Kanban simples e interativo desenvolvido com HTML, 
 
  <br/>
  <br/>
- 
+
 ## 🔍 Funcionalidades
 
 - Arrastar e soltar cards entre colunas (Drag and Drop)
 - Modal para criação de novos cards
 - Seleção de prioridade: Alta, Média e Baixa
-- Interface responsiva e moderna
-- Colunas editáveis (personalizáveis)
+- Interface responsiva
