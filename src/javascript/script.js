@@ -35,7 +35,7 @@ const openButtons = document.querySelectorAll('.add-card');
 
 openButtons.forEach(button => {
     button.addEventListener('click', () => {
-        currentButton = button; // <-- Aqui!
+        currentButton = button; 
         const modalId = button.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
         modal.showModal();
@@ -98,7 +98,6 @@ modalForm.addEventListener('submit', function(e) {
         e.currentTarget.classList.remove('dragging');
     });
 
-    // Usando o botão clicado para encontrar a coluna correta
     const column = currentButton.closest('.kanban-column').querySelector('.kanban-cards');
     column.appendChild(newCard);
 
