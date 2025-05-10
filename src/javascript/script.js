@@ -104,3 +104,5 @@ modalForm.addEventListener('submit', function(e) {
     document.getElementById('modal-1').close();
     modalForm.reset();
 });
+
+/*Fim modal para adicionar novos card*/
